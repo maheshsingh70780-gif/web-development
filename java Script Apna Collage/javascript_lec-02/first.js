@@ -1,16 +1,18 @@
 // Revision is completed.
-console.log("Mahesh Singhjavascriot lecture 02is started");
+console.log("Mahesh Singh");//kese bhi messege ko print kar sakte h console.log se
+console.log("hello mayank kumar")
 
 //Variable declaration in javascript (js).
 
 // Variables --> variables are containers for data.
+//deff data  ko store kare k leye contener chaye in contenr ko  verables kaha jata h
 // Reserved keyword in java script --> console not made variable --> because it is reserved keyword in javascript kyuki ye --> pehle hi use ho chuka hai as console.log();
 
 // Types of Variables in JavaScript : Three-(3) types.
 //var --> Global variable.
 //let --> local variable.
 //const --> fixed or static variable.
-// let ka use as --> { let a = 10; let a = 20; console.log(a) } --> error dega kyuki let variable ko re-declare nahi kar sakte hain in same block. 
+// let ka use as --> { Age a = 10; Age a = 20; console.log(a) } --> error dega kyuki let variable ko re-declare nahi kar sakte hain in same block. 
 // let as --> { let a = 10; { let a = 20; console.log(a) } } --> 20 print hoga kyuki inner block me re-declare kiya gya hai.
 // 
 
