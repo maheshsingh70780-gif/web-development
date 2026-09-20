@@ -1,4 +1,4 @@
-V// Revision of JS-Lec-03
+// Revision of JS-Lec-03
 
 console.log("Loop in JavaScript");
 
