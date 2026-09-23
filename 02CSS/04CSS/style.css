@@ -1,0 +1,120 @@
+
+/* Flexbox Lecture - 04 */
+/* Flexbox ko samajhne ke liye practice */
+
+h1 {
+    background-color: red;                 /* heading ka background */
+}
+
+
+.container {
+    background-color: antiquewhite;        /* container ka color */
+
+    display: flex;                         /* flexbox start karna */
+    height: 500px;                         /* container ki height */
+
+    flex-direction: row;                   /* boxes ko row mein rakhna */
+
+    justify-content: center;               /* main axis par center */
+
+    align-items: center;                   /* cross axis par center */
+
+    flex-wrap: wrap;                       /* jagah kam hone par next line */
+
+    gap: 10px;                             /* boxes ke beech gap */
+}
+
+
+/* Flex-direction se boxes ki direction badal sakte hain */
+/* row = left se right */
+/* row-reverse = right se left */
+/* column = upar se neeche */
+/* column-reverse = neeche se upar */
+
+
+/* justify-content main axis par items ko set karta hai */
+/* center = beech mein */
+/* flex-start = starting point par */
+/* flex-end = ending point par */
+/* space-around = items ke aas-paas space */
+/* space-between = items ke beech space */
+/* space-evenly = sabke beech equal space */
+
+
+/* align-items cross axis par items ko set karta hai */
+/* center = beech mein */
+/* flex-start = start mein */
+/* flex-end = end mein */
+
+
+/* row mein horizontal main axis hoti hai */
+/* row mein vertical cross axis hoti hai */
+/* column mein vertical main axis hoti hai */
+/* column mein horizontal cross axis hoti hai */
+
+
+/* flex-wrap ka use items ko next line mein bhejne ke liye hota hai */
+/* screen chhoti hone par layout ko adjust karne mein help karta hai */
+/* nowrap mein items ek hi line mein rahte hain */
+
+
+/* Child elements par bhi flex ki properties laga sakte hain */
+/* flex-grow se extra space items mein baanta ja sakta hai */
+/* flex-grow ki default value 0 hoti hai */
+
+
+.box {
+    height: 100px;                         /* box ki height */
+    width: 100px;                          /* box ki width */
+}
+
+
+.first {
+    background-color: orange;              /* first box ka color */
+
+    /* flex-basis: 200px; */                /* starting size set karna */
+
+    /* flex-grow: 1; */                     /* extra space lena */
+}
+
+
+.second {
+    background-color: green;               /* second box ka color */
+
+    flex-shrink: 4;                        /* space kam hone par zyada shrink */
+
+    /* flex-basis: 300px; */                /* initial size set karna */
+
+    /* flex-grow: 2; */                     /* extra space ka bada hissa lena */
+}
+
+
+/* flex-basis main axis ke size ko set karta hai */
+/* row mein basis width ko affect karta hai */
+/* column mein basis height ko affect karta hai */
+
+
+/* flex-shrink screen ya container chhota hone par box ko shrink karta hai */
+
+
+.third {
+    background-color: red;                 /* third box ka color */
+
+    align-self: center;                    /* sirf is box ko center mein rakhna */
+
+    /* flex-grow: 3; */                     /* extra space ka zyada hissa lena */
+}
+
+
+.fourth {
+    background-color: chartreuse;          /* fourth box ka color */
+
+    /* align-self: flex-start; */            /* box ko upar/start mein rakhna */
+
+    /* align-self: flex-end; */              /* box ko end mein rakhna */
+
+    /* align-self: center; */                /* box ko center mein rakhna */
+
+    /* align-self ek particular box par kaam karta hai */
+}
+

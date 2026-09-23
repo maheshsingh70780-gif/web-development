@@ -1,0 +1,66 @@
+* {
+    margin: 0;/* bahar ki space hatao */
+    padding: 0;/* andar ki space hatao */
+    box-sizing: border-box; /* size ko fix rakho */
+    font-family: Arial, sans-serif; /* font set karo */
+}
+
+body {
+    background-color: #e61a80;/* page ka pink color */
+    height: 100vh;/* puri screen ki height */
+    display: flex;/* flexbox lagao */
+    justify-content: center;/* box ko beech mein lao */
+    align-items: center;/* upar-niche se center */
+}
+
+.box {
+    background-color: #ffffff; /* form ka white color */
+    padding: 40px 30px;/* box ke andar space */
+    border-radius: 8px;/* corners ko round karo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* shadow lagao */
+    width: 360px;/* box ki width */
+    text-align: center;/* text center mein */
+}
+
+.box h1 {
+    margin-bottom: 25px; /* heading ke neeche space */
+    color: #333333; /* heading ka color */
+    font-size: 28px;/* heading ka size */
+}
+
+.input-group {
+    position: relative;  /* icon ke liye base */
+    margin-bottom: 15px; /* inputs ke beech gap */
+    width: 100%;   /* puri available width */
+}
+
+.input-group i {
+    position: absolute;  /* icon ko set karna */
+    left: 14px;         /* left se distance */
+    top: 50%;            /* center ke paas */
+    transform: translateY(-50%);            /* icon ko exact center */
+    color: #000000;                         /* icon black */
+    font-size: 16px;                        /* icon ka size */
+    z-index: 5;                             /* icon ko upar rakhna */
+}
+
+.input-group input {
+    width: 100%;                            /* input ki full width */
+    padding: 12px 12px 12px 42px;            /* icon ke liye left space */
+    border: 1px solid #cccccc;              /* input ki border */
+    border-radius: 4px;                     /* input ke corners */
+    font-size: 14px;                        /* input text ka size */
+    outline: none;                          /* default outline hatao */
+}
+
+.input-group input:focus {
+    border-color: #5e2ced;                  /* click karne par border color */
+}
+
+.signup-btn {
+    border: none;                           /* border hatao */
+    border-radius: 4px;                     /* button ke corners */
+    font-weight: bold;                      /* text ko bold karo */
+    margin-top: 10px;     /* button ke upar space */
+}
+

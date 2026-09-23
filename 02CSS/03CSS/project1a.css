@@ -1,0 +1,19 @@
+#container {
+
+    width: 300px;                  /* Container ki chaudai */
+    height: 200px;                 /* Container ki unchai */
+    background-color: green;       /* Container ka background color */
+    position: relative;            /* Container ko relative position dena */
+}
+
+#circle {
+
+    width: 100px;                  /* Circle ki chaudai */
+    height: 100px;                 /* Circle ki unchai */
+    background-color: red;         /* Circle ka background color */
+    border-radius: 50%;            /* Box ko gol circle banana */
+    position: absolute;            /* Circle ki position ko absolute karna */
+    left: 100px;                   /* Circle ko left se 100px door rakhna */
+    top: 50px;                     /* Circle ko upar se 50px neeche rakhna */
+}
+

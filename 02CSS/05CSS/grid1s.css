@@ -1,0 +1,54 @@
+* {
+    padding: 0px;                         /* andar ki jagah hatao */
+    margin: 0px;                          /* bahar ki jagah hatao */
+    box-sizing: border-box;               /* size ko box ke andar rakho */
+    color: white;                         /* text ka rang safed */
+    font-size: 30px;                      /* text ka size */
+}
+
+body {
+    background-color: black;              /* page ka background kala */
+}
+
+.container {
+    /* grid layout ko on karna */
+    display: grid;
+
+    /* 2 row banengi aur unka ratio 1:2 rahega */
+    grid-template-rows: 1fr 2fr;
+
+    /* 2 column banengi aur dono barabar hongi */
+    grid-template-columns: 1fr 1fr;
+
+    /* 1fr ka matlab available space ka ek hissa */
+    /* 2fr ka matlab usse dugna hissa */
+
+    /* boxes ke beech thodi jagah */
+    gap: 10px;
+
+    /* container ki height */
+    height: 400px;
+
+    /* container ki width */
+    width: 400px;
+
+    /* grid box ka background */
+    background-color: pink;
+}
+
+.first {
+    background-color: blue;               /* first box neela */
+}
+
+.second {
+    background-color: navy;               /* second box dark blue */
+}
+
+.third {
+    background-color: lawngreen;          /* third box hara */
+}
+
+.fourth {
+    background-color: green;              /* fourth box green */
+} 
+

@@ -1,0 +1,45 @@
+#container {
+
+    width: 300px;                         /* chaudai */
+    height: 200px;                        /* unchai */
+    background-color: yellow;             /* peela rang */
+    position: relative;                   /* relative position */
+}
+
+.box {
+
+    box-sizing: border-box;               /* box ka size fix */
+    background-color: rgb(45,45,209);     /* neela rang */
+}
+
+.first, .third {
+
+    height: 85px;                         /* unchai */
+    width: 85px;                          /* chaudai */
+}
+
+.third {
+
+    position: absolute;                   /* absolute position */
+    bottom: 0px;                          /* neeche rakhna */
+}
+
+.second, .four {
+
+    height: 85px;                         /* unchai */
+    width: 170px;                         /* chaudai */
+    position: absolute;                   /* absolute position */
+}
+
+.second {
+
+    top: 0px;                             /* upar rakhna */
+    right: 0px;                           /* right side rakhna */
+}
+
+.four {
+
+    bottom: 0px;                          /* neeche rakhna */
+    right: 0px;                           /* right side rakhna */
+}
+
