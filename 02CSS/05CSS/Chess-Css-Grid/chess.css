@@ -1,0 +1,46 @@
+/* Chess made as project of Grid-CSS. */
+
+/* Sabhi elements par ye common properties apply hongi */
+*{
+    /* Element ke andar ka extra space remove */
+    padding: 0px;
+
+    /* Element ke bahar ka extra space remove */
+    margin: 0px;
+
+    /* Width aur height ke calculation ko easy banata hai */
+    box-sizing: border-box;
+}
+
+/* Chess board ka main container */
+.container{
+
+    /* Board ki total height 400px */
+    height: 400px;
+
+    /* Board ki total width 400px */
+    width: 400px;
+
+    /* Container ko Grid layout me convert karta hai */
+    display: grid;
+
+    /* 8 equal rows create hongi */
+    grid-template-rows: repeat(8,1fr);
+
+    /* 8 equal columns create hongi */
+    grid-template-columns: repeat(8,1fr)
+}
+
+/* Black boxes ke liye styling */
+.black{
+
+    /* Black boxes ka background black hoga */
+    background-color: black;
+}
+
+/* White boxes ke liye styling */
+.white{
+
+    /* White boxes ka background white hoga */
+    background-color: white;
+}

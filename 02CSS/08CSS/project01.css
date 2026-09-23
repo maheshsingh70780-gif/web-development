@@ -1,0 +1,94 @@
+/* Solar System Animation ka CSS Project - Lecture 08. */ 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Flexbox ke bina bhi isi layout ko banane ki practice */
+    /* position: relative; */
+
+}
+
+.box{
+    /* height: 200px;
+    width: 200px; */
+
+    height: 400px;
+    width: 400px;
+
+    background-color: red;
+
+    /* Box ko parent ke according position karne ka alternative */
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+
+    /* Element ko uski khud ki width aur height ke aadhe hisse se adjust karta hai */
+    /* transform: translate(-50%, -50%); */
+
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Animation ka naam aur uski settings */
+    animation: moving;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    /* Circle shape banane ke liye */
+    border-radius: 50%;
+
+}
+
+
+@keyframes moving{
+
+    /* Purane method mein object ko orbit ke saath rotate karne ka idea */
+    /* from{
+
+        /* Pehle object ko X-axis par shift karke ghumane ki koshish */
+        /* Isme ek rotation movement ko balance karne ke liye opposite rotation diya gaya tha */
+        /* transform: rotate(0deg) translateX(200px) rotate(0deg); */
+
+    /*  }
+    to{ */
+
+        /* Final stage par rotation aur opposite rotation ko combine kiya gaya */
+        /* transform: rotate(360deg) translateX(200px) rotate(-360deg); */ 
+
+    /* } */
+
+   /* Seedhe rotation wale method ko yahan use kiya gaya hai */
+from{
+    transform: rotate(0deg);
+}
+to{
+transform: rotate(360deg);
+}
+
+}
+
+.sun{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+
+    /* Green circle ko horizontal direction mein shift karta hai */
+    transform: translateX(100px);
+
+    /* Element ko gol shape deta hai */
+    border-radius: 50%;
+
+}

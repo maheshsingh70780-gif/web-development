@@ -1,0 +1,157 @@
+/* Grid-garden game use to build understanding about Grid. */
+
+
+/* Sabhi HTML elements par common CSS apply hogi */
+*{
+    /* Default padding remove karta hai */
+    padding: 0px;
+
+    /* Default margin remove karta hai */
+    margin: 0px;
+
+    /* Width aur height ke calculation ko control karta hai */
+    box-sizing: border-box
+}
+
+
+/* Sabhi boxes ki common styling */
+.box{
+
+     /* Box ka background black */
+     background-color: black;
+
+     /* Box ke andar text white */
+     color: white;
+
+     /* Text ka size 20px */
+     font-size: 20px;
+}
+
+
+/* Main Grid container */
+.container{
+
+    /* Container ki height 800px */
+    height: 800px;
+
+    /* Container ki width 800px */
+    width: 800px;
+
+    /* Grid layout enable karta hai */
+    display: grid;
+
+    /* 3 equal rows create karta hai */
+    grid-template-rows: 1fr 1fr 1fr;
+
+    /* 4 equal columns create karta hai */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* Rows aur columns ke beech 10px gap */
+    gap: 10px;
+
+    /* Container ke andar 10px spacing */
+    padding: 10px;
+
+    /* Grid container ka background dark blue */
+    background-color: darkblue;
+}
+
+
+/* First box ki styling */
+.first{
+
+    /* First box ka background yellow-green */
+    background-color: yellowgreen;
+
+    /* Column 2 se start hoga */
+    grid-column-start: 2;
+
+    /* Column 4 se pehle tak jayega */
+    grid-column-end: 4;
+
+    /* Short-hand property ka example */
+    /* grid: 2/4; */
+}
+
+
+/* Second box ki styling */
+.second{
+
+    /* Second box ka background red */
+    background-color: red;
+
+    /* Column 4 se start hoga */
+    grid-column-start: 4;
+}
+
+
+/* Third box ki styling */
+.third{
+
+    /* Third box ka background yellow-green */
+    background-color: yellowgreen;
+
+    /* Row 1 se start hoga */
+    grid-row-start: 1;
+
+    /* Row 4 se pehle tak jayega */
+    grid-row-end: 4;
+}
+
+
+/* Fourth box ki styling */
+.fourth{
+
+    /* Fourth box ka background yellow */
+    background-color:yellow;
+
+    /* Row 2 se start hoga */
+    grid-row-start:2;
+}
+
+
+/* Fifth box ki styling */
+.fifth{
+
+    /* Fifth box ka background red */
+    background-color: red;
+
+    /* Row 2 se start hoga */
+    grid-row-start:2;
+}
+
+
+/* Sixth box ki styling */
+.sixth{
+
+    /* Sixth box ka background yellow-green */
+    background-color: yellowgreen;
+
+    /* Row 2 se start hoga */
+    grid-row-start:2;
+
+    /* Row 4 se pehle tak jayega */
+    grid-row-end:4;
+}
+
+
+/* Seventh box ki styling */
+.seventh{
+
+    /* Seventh box ka background red */
+    background-color:red;
+
+    /* Row 3 se start hoga */
+    grid-row-start:3;
+}
+
+
+/* Eighth box ki styling */
+.eighth{
+
+    /* Eighth box ka background yellow */
+    background-color: yellow;
+
+    /* Eighth box Row 3 se start hoga */
+    grid-row-start:3;
+}

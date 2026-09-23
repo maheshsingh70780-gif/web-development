@@ -1,0 +1,88 @@
+/* CSS Animation - Lesson 07 */
+
+*{
+    height: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+.container{
+    padding: 20px;
+    position: relative;
+}
+
+
+.box{
+    height: 300px;
+    width: 400px;
+    background-color: red;
+
+    animation-name: moving;
+
+    /* Specifies how long one complete animation cycle takes */
+    animation-duration: 5s;
+
+    /* Keeps the animation running repeatedly */
+    animation-iteration-count: infinite;
+
+    /* Maintains the same movement speed throughout the animation */
+    animation-timing-function: linear;
+
+    /* Makes the element move forward and then reverse its path */
+    animation-direction: alternate;
+
+    /* Waits for 2 seconds before starting the animation */
+    animation-delay: 2s;
+
+    /* Fill mode can control the element's state before or after animation */
+    /* animation-fill-mode: backwards; */
+
+    /* Parent-child positioning setup for the animated element */
+    position: absolute;
+}
+
+
+/* Keyframes define the different stages of an animation */
+
+/* Each percentage represents a particular point in the animation timeline */
+
+@keyframes moving{
+
+    0%{
+        /* Starting position and initial appearance */
+        background-color: orange;
+        top: 10px;
+        left: 10px;
+    }
+
+    25%{
+        /* Moves the box towards the right side */
+        background-color: blue;
+        top: 10px;
+        left: 2500px;
+    }
+
+    50%{
+        /* Changes direction by moving the box downward */
+        background-color: green;
+        top: 1500px;
+        left: 2500px;
+    }
+
+    75%{
+        /* Brings the box towards the left */
+        background-color: blue;
+        top: 1500px;
+        left: 10px;
+    }
+
+    100%{
+        /* Returns the box to its original location */
+        background-color: orange;
+        top: 10px;
+        left: 10px;
+    }
+
+}

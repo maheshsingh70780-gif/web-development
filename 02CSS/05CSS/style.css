@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    background-color: aqua;
+    gap: 5px;
+}
+
+.Box{
+    height: 300px;
+    width: 200px;
+}
+
+.first{
+    background-color: orange;
+}
+
+.second{
+    /* Turns the second box into a flex container */
+    /* background-color: red; */
+
+    /* Places the child elements vertically */
+    display: flex;
+    flex-direction: column;
+
+    /* Adds 20px space between the child elements */
+    gap: 20px;
+
+    background-color: purple;
+     
+}
+
+
+.child{
+    height: 140px;
+    background-color: red;
+
+}

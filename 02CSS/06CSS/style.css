@@ -1,0 +1,50 @@
+/* CSS Responsive Layout - Lesson 06 */
+
+
+/* Base styling used before any breakpoint is reached */
+.container{ 
+    height: 400px; 
+    width: 400px; 
+    font-size: 50px; 
+    background-color: aqua; 
+
+} 
+
+
+/* Smaller screens ke liye alternate styling */
+/* @media screen and (max-width: 600px){ 
+    .container{ 
+        height: 300px; 
+        width: 300px;  
+        background-color: pink; 
+        font-size: 30px; 
+    }  
+     
+}  */
+
+
+/* Screen width kam hone par ye rules apply ho sakte hain */
+/* @media screen and (max-width: 900px){ 
+.container{ 
+        background-color: green; 
+        font-size: 40px; 
+    } 
+} */
+
+
+/* Medium-size screens par layout ko adjust karta hai */
+@media screen and (min-width:600px){ 
+    .container{ 
+        background-color: orange; 
+        font-size: 60px; 
+    } 
+} 
+
+
+/* Large screens ke liye additional styling */
+@media screen and (min-width:900px){ 
+    .container{ 
+        background-color: green; 
+        font-size: 80px; 
+    } 
+}

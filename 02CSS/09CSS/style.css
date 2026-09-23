@@ -1,0 +1,375 @@
+/* Portfolio website ko CSS styling dene ke liye ye file use ho rahi hai. */
+/* Website ko different screen sizes par adjust karne ke liye responsive design add kiya gaya hai. */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+    /* Text ki lines ke beech ka vertical gap control hota hai. */
+
+}
+
+
+/* Puri website ka main layout yahan se control hoga. */
+.main-container{
+    display: grid;
+    max-width: 1800px;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    padding-top: 40px;
+    margin: auto;
+    border: 1px solid #3a3a3a;
+    border-radius:16px;
+}
+
+
+/* Left side wale profile panel ki styling. */
+.sidebar{
+    height: 120vh;
+    width: 200px;
+    background-color: hsl(0, 0%, 16%);
+    border-radius: 16px;
+    padding: 40px;
+    margin: auto;
+    position: sticky;
+    top: 0px;
+
+}
+
+
+/* Right side ke main content area ka design. */
+.main-content{
+    height: 480vh;
+    width: 700px;
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    margin: auto;
+    padding: 40px;
+}
+
+
+/* User ke profile details ka pura section. */
+.profile{
+    /* text-align center karne se profile ke andar ka text aur inline content center mein aa jayega. */
+    text-align:center;
+}
+
+.profile img{
+    height: 120px;
+    width: 120px;
+    border-radius:50%;
+    border: 1px solid #3a3a3a;
+}
+
+.profile h2{
+    font-size:1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+.profile p{
+    background-color: #1e1e1e;
+    color: #FFBF00;
+    font-size: 0.8rem;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+
+/* Email, phone aur location ki information ko style karta hai. */
+.contact{
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    border-spacing: 10px;
+    padding-top:20px;
+}
+
+.label{
+    color: #0a0a0a;
+    font-weight: 500px;
+    font-size: 0.8rem;
+}
+
+.value{
+    color: #e0e0e0;
+    text-decoration:none;
+}
+
+.email{
+    margin-bottom: 10px;
+}
+
+
+/* Social media icons ke liye styling section. */
+.social{
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social img{
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.3s ease;
+}
+
+.social img:hover {
+    filter: grayscale(0) invert(0);
+}
+
+
+/* Website ke main content wale portion ki styling. */
+
+
+/* Upar diye gaye menu links ka layout. */
+#navigation{
+    /* text ko right side mein directly bhi laa sakte hain. */
+    /* nav ko flex banakar bhi links ko desired position par rakha ja sakta hai. */
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#a0a0a0;
+    font-weight:500;
+    transition : color 0.3s ease;
+    
+}
+
+.active, nav a:hover{
+    color:#FFBF00;
+}
+
+
+/* About section ke headings ka common design. */
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 60px;
+    height: 5px;
+    background-color: #FFBF00;
+    margin-bottom: 15px;
+}
+
+.content{
+    text-align: justify;
+    color:#a0a0a0;
+}
+
+#about{
+    margin-bottom: 40px;
+}
+
+
+/* Skills ko cards ke form mein arrange karne ka layout. */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+}
+
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 30px;
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+}
+
+/* Mouse le jaane par skill card ko thoda bada dikhaya jayega. */
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.item img{
+    height: 48px;
+    width: 48px;
+    filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+    margin-bottom: 15px;
+}
+
+.item h3{
+    font-size: 1rem;
+    font-weight:500;
+}
+
+
+/* Education wale part ka outer section. */
+#education{
+    margin-top: 30px;
+}
+
+.edtech{
+    position: relative;
+    margin-top: 20px;
+}
+
+.year{
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 500px;
+    margin-bottom: 5px;
+}
+
+.college{
+    font-style: italic;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+
+.work{
+    color: #a0a0a0;
+}
+
+.edfirst, .edsecond{
+    margin-bottom: 30px;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Timeline par education point ko circle ke roop mein show karta hai. */
+.goal{
+    height: 7px;
+    width: 7px;
+    border: 3px solid #FFBF00;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 5;
+}
+
+/* Education ke dono points ko connect karne wali vertical line. */
+.liner{
+    position: absolute;
+    width: 2px;
+    top: 0px;
+    bottom: 0px;
+    left: 3px;
+    border: 2px solid #3a3a3a;
+}
+
+
+/* Portfolio projects ko display karne wala section. */
+.project-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.project{
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #3a3a3a;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.project:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project img{
+    height: 180px;
+    width: 100%;
+    /* Image ko container ke size ke according fit karne ke liye object-fit use kiya gaya hai. */
+    object-fit: cover;
+}
+
+.card{
+    padding: 20px;
+
+}
+
+.card h3{
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.card p{
+    color:#a0a0a0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card span{
+    background-color: rgba(255, 191, 0, 0.1);
+    color: #FFBF00;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
+
+
+/* 1200px ya usse chhoti screen ke liye layout ko responsive banaya. */
+@media screen and (max-width: 1200px){
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+
+}
+
+
+/* Mobile aur small devices ke liye extra responsive settings. */
+@media screen and (max-width: 750px){
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    #navigation nav{
+        /* Chhoti screen par navigation links ko properly adjust karta hai. */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sidebar{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+}

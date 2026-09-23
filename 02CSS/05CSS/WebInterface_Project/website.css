@@ -1,0 +1,149 @@
+/* website-architechture made to build our website in future. */
+
+
+/* Sabhi HTML elements par common styling apply hogi */
+*{
+    /* Default padding remove karta hai */
+    padding:0px;
+
+    /* Default margin remove karta hai */
+    margin: 0px;
+
+    /* Width aur height ke calculation ko easy banata hai */
+    box-sizing: border-box;
+}
+
+
+/* Body ki basic styling */
+body{
+
+    /* Page ka background black hoga */
+    background-color: black;
+
+    /* Body ke andar text white hoga */
+    color: white;
+
+    /* Text ka default size 20px */
+    font-size: 20px;
+}
+
+
+/* Main website layout ka container */
+.container{
+
+    /* Container ki height 800px */
+    height: 800px;
+
+    /* Container ki width 800px */
+    width: 800px;
+
+    /* Grid layout activate karta hai */
+    display:grid;
+
+    /* 3 equal columns banengi */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* 4 rows banengi, different sizes ke saath */
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+
+    /* Grid items ke beech 20px ka gap */
+    gap: 20px;
+
+    /* Container ke andar 10px spacing */
+    padding: 10px;
+}
+
+
+/* Sabhi boxes ki common styling */
+.box{
+
+    /* Boxes ka default background blue */
+    background-color: blue;
+}
+
+
+/* Website ka Header */
+.header{
+
+    /* Header ke text ko center karta hai */
+    text-align: center;
+
+    /* Header ke andar 50px spacing */
+    padding: 50px;
+
+    /* Header column 1 se start hoga */
+    grid-column-start: 1;
+
+    /* Column 4 se pehle tak jayega */
+    grid-column-end: 4;
+
+    /* Header ka alag background color yahan disable hai */
+    /* background-color: blue; */
+}
+
+
+/* Website ka Sidebar */
+.sidebar{
+
+    /* Sidebar ke text ko center karta hai */
+    text-align:center;
+
+    /* Sidebar ke top par 50px spacing */
+    padding-top: 50px;
+
+    /* Sidebar ka alag background color disable hai */
+    /* background-color: cadetblue; */
+
+    /* Sidebar row 2 se start hoga */
+    grid-row-start: 2;
+
+    /* Row 4 se pehle tak jayega */
+    grid-row-end: 4;
+}
+
+
+/* Pehla content section */
+.content1{
+
+    /* Is content ka separate background color disable hai */
+    /* background-color: cornflowerblue; */
+
+    /* Content column 2 se start hoga */
+    grid-column-start: 2;
+
+    /* Column 4 se pehle tak jayega */
+    grid-column-end: 4;
+}
+
+
+/* Dusra content section */
+.content2{
+
+    /* Content column 2 se start hoga */
+    grid-column-start: 2;
+
+    /* Iska separate background color disable hai */
+    /* background-color: darkorchid; */
+}
+
+
+/* Teesra content section */
+.content3{
+
+    /* Iska separate background color disable hai */
+    /* background-color: deepskyblue; */
+}
+
+
+/* Website ka Footer */
+.footer{
+
+    /* Footer ka separate background color disable hai */
+    /* background-color: fuchsia; */
+
+    /* Footer column 1 se start hoga */
+    grid-column-start: 1;
+
+    /* Column 4 se pehle tak jayega */
+    grid-column-end: 4;
+}

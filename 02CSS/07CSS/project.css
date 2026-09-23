@@ -1,0 +1,65 @@
+/* CSS Animation Project */
+
+/* Basic reset for all elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+
+}
+
+body{
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    /* Adds some space above the main content */
+    padding-top: 20px;
+}
+
+.container{
+
+    background-color:rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.129);
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    width: 70%;
+    border-radius: 5px;
+
+    /* Prevents the text from moving onto multiple lines */
+    white-space: nowrap;
+
+    /* Keeps the animated text clipped inside the container */
+    overflow: hidden;
+
+}
+
+
+p{
+
+    /* Starts the paragraph outside the right side of the container */
+    margin-left: 100%;
+
+    /* Applies the movement animation to the paragraph */
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes moving{
+
+    from{
+        /* Beginning point: text starts beyond the right edge */
+        margin-left: 100%;
+    }
+
+    to{
+        /* Ending point: text travels beyond the left edge */
+        margin-left: -30%;
+    }
+
+}

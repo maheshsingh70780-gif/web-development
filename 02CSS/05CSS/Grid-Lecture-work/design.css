@@ -1,0 +1,165 @@
+/* home work of grid design lecture of css. */
+
+/* ===== Universal Selector ===== */
+*{
+    /* Sab elements ka default padding remove */
+    padding:0px;
+
+    /* Sab elements ka default margin remove */
+    margin: 0px;
+
+    /* Width aur height ko properly calculate karta hai */
+    box-sizing: border-box;
+}
+
+
+/* ===== Common Styling for All Boxes ===== */
+.box{
+
+    /* Sab boxes ka default background color */
+    background-color: black;
+
+    /* Text ka color blue */
+    color: blue;
+
+    /* Text size 20px */
+    font-size: 20px;
+}
+
+
+/* ===== Main Grid Container ===== */
+.container{
+
+    /* Container ki height */
+    height: 600px;
+
+    /* Container ki width */
+    width: 800px;
+
+    /* Grid layout activate */
+    display: grid;
+
+    /* 3 equal rows */
+    grid-template-rows: 1fr 1fr 1fr;
+
+    /* 5 equal columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    /* Boxes ke beech gap */
+    gap: 10px;
+
+    /* Container ke andar spacing */
+    padding: 10px;
+
+    /* Container ka background color */
+    background-color: mediumblue;
+}
+
+
+/* ===== First Box ===== */
+.first{
+
+    /* Red background */
+    background-color: red;
+
+    /* Row 1 me place */
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+
+
+/* ===== Second Box ===== */
+.second{
+
+    /* Grey background */
+    background-color: grey;
+
+    /* Column 2 se 4 tak space lega */
+    grid-column-start: 2;
+    grid-column-end:4;
+}
+
+
+/* ===== Third Box ===== */
+.third{
+
+    /* Khaki color */
+    background-color: khaki;
+
+    /* Column 4 se 6 tak */
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+
+/* ===== Fourth Box ===== */
+.fourth{
+
+    /* Khaki color */
+    background-color: khaki;
+
+    /* Column 2 me start */
+    grid-column-start: 2;
+}
+
+
+/* ===== Fifth Box ===== */
+.fifth{
+
+    /* White background */
+    background-color: white;
+
+    /* Column 3 se 5 tak */
+    grid-column-start: 3;
+    grid-column-end:5;
+}
+
+
+/* ===== Sixth Box ===== */
+.sixth{
+
+    /* Red background */
+    background-color: red;
+
+    /* Column 5 me place */
+    grid-column-start: 5;
+
+    /* Row 2 se Row 4 tak height */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+/* ===== Seventh Box ===== */
+.seventh{
+
+    /* White background */
+    background-color: white;
+
+    /* Row 2 se Row 4 tak */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+/* ===== Eighth Box ===== */
+.eighth{
+
+    /* Red background */
+    background-color: red;
+
+    /* Column 2 se 4 tak */
+    grid-column-start:2;
+    grid-column-end: 4;
+}
+
+
+/* ===== Ninth Box ===== */
+.ninth{
+
+    /* Teal background */
+    background-color: teal;
+
+    /* Column 4 me place */
+    grid-column-start:4;
+}

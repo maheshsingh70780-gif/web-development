@@ -1,0 +1,127 @@
+/* CSS Transform aur Transition ka Lecture - 08 */
+
+
+/* Browser ki default spacing ko hata rahe hain */
+* { 
+   padding: 0; 
+   margin: 0; 
+   box-sizing: border-box; 
+} 
+
+
+.container { 
+   height: 100vh; 
+   background-color: black; 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+   gap: 20px; 
+
+   /* 3D depth ka effect samajhne ke liye perspective ka use */
+   /* perspective: 800px; */ 
+} 
+
+
+.box { 
+   height: 250px; 
+   width: 250px; 
+   border-radius:50%; 
+   background-color: orange; 
+
+   /* Cursor ko hand shape mein dikhata hai */
+   cursor: pointer; 
+ 
+   /* Element ko vertical direction mein upar ya neeche le jaata hai */
+   /* transform: translateY(-300px); */ 
+ 
+   /* Ek saath horizontal aur vertical movement karta hai */
+   /* transform: translate(200px, 300px); */ 
+ 
+   /* Box ko given angle par ghumata hai */
+   /* transform: rotate(130deg); */ 
+ 
+   /* Element ko Y-axis ki taraf tedha karta hai */
+   /* transform: skewY(-10deg); */ 
+
+
+   /* Kis property par smooth effect lagana hai */
+   /* transition-property: all */ 
+ 
+   /* Effect complete hone mein kitna samay lagega */
+   /* transition-duration: 3s; */ 
+ 
+   /* Movement ki speed kis tarah badlegi */
+   /* transition-timing-function: ease-in; */ 
+ 
+   /* Effect shuru hone se pehle rukne ka samay */
+   /* transition-delay: 2s; */ 
+ 
+   /* Transition ki saari values ek hi line mein */
+   /* transition: all 3s ease-in 2s; */ 
+   /* transition: all 3s; */ 
+ 
+   /* Transition ko trigger karne ke liye koi event chahiye */
+   font-size: 50px; 
+   color: white; 
+
+   /* Box ke andar content ko center karne ke options */
+   /* justify-content: center; 
+   align-items: center; 
+   padding: 30px; */ 
+
+   /* Neeche banaye gaye animation ko box par lagaya */
+   animation-name: moving; 
+
+   /* Ek baar animation chalne ka total samay */
+   animation-duration: 5s; 
+
+   /* Animation ko baar-baar repeat karna */
+   animation-iteration-count: infinite; 
+
+} 
+
+
+/* Animation ke starting aur ending points define karta hai */
+@keyframes moving{ 
+   from{ 
+      /* Animation ki shuruaat zero degree se */
+      transform: rotateZ(0deg); 
+   } 
+   to{ 
+      /* Box ko poora ek chakkar ghumaya */
+      transform: rotateZ(360deg); 
+   } 
+
+} 
+
+
+/* Cursor box ke upar aane par hover effect lagaya ja sakta hai */
+/* .box:hover { */ 
+
+   /* Hover karne par box ka color aur size badal sakte hain */
+   /* background-color: purple; 
+   height: 300px; 
+   width: 250px; */ 
+ 
+   /* Box ke size ko bada karne ke alag tareeke */
+   /* transform: scale(3); */ 
+   /* transform: scaleX(3); */ 
+   /* transform: scaleY(3); */ 
+ 
+   /* Box ko alag-alag direction mein shift karna */
+   /* transform: translate(100px, 200px); */ 
+   /* transform: translateX(200px); */ 
+   /* transform: translateY(200px); */ 
+
+   /* 3D space mein Z-axis par element ko move karna */
+   /* transform: translateZ(500px); */ 
+ 
+   /* Y-axis ke around element ko rotate karna */
+   /* transform: rotateY(-50deg); */ 
+
+/* } */ 
+
+
+/* Transform se element ko move, rotate, resize aur tilt kar sakte hain */
+
+/* In effects ka use interactive cards aur UI elements mein kiya ja sakta hai */

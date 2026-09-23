@@ -1,0 +1,35 @@
+/* Chess board project created using CSS Grid */
+
+*{ 
+    padding: 0px; 
+    margin: 0px; 
+    box-sizing: border-box; 
+    /* color: white; 
+    font-size: 30px; */ 
+} 
+ 
+ 
+.body{ 
+    background-color:black; 
+} 
+ 
+ 
+.container{ 
+    height: 800px; 
+    width: 800px; 
+    display: grid; 
+
+    /* repeat() avoids writing 1fr eight times manually */
+    grid-template-rows: repeat(8,1fr); 
+    grid-template-columns: repeat(8,1fr); 
+} 
+ 
+ 
+.white{ 
+    background-color: white; 
+} 
+ 
+ 
+.brown{ 
+    background-color:brown; 
+}
