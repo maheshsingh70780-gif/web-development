@@ -2,13 +2,43 @@
 //          Array IN JAVASCRIPT ---> collection of item  ---> array information ko 
 //  store karane ka linear tareja hota h
 // ====================================================================================
-let mark_student1 = 97;   //veriable ager hamare pass 10 student a gye to hame  new 10 vriable bane padge ye aproch nahi
-let mark_student2 = 96;
-let marks =[12,23,24,25,26,27]
+
+// ==========================================================
+// JAVASCRIPT ARRAYS – REVISION + PRACTICE
+// ==========================================================
+
+// Array ka matlab:
+// Ek hi variable ke andar multiple values store karna.
+// Example: ek student ke multiple subjects ke marks.
+
+let marks = [96, 75, 66, 80, 85];
+
+// Index hamesha 0 se start hota hai.
+// marks[0] -> 96
+// marks[1] -> 75
+// marks[2] -> 66
+// marks[3] -> 80
+// marks[4] -> 85
+
 console.log(marks);
-console.log(marks.length);//length ha vo kuch kam nahi kar rahe ye kevle ak property h
 
 
+// ----------------------------------------------------------
+// ARRAY KI LENGTH
+// ----------------------------------------------------------
 
-let heroes = ["ironman","thor","hulk","shaktiman","spiderman"];
-console.log(heroes);
+// length batata hai ki array ke andar total kitne elements hain.
+
+console.log(marks.length);//property
+
+// Ex2)
+let array = ["mahesh","pavan","sandeep","Ram"];
+console.log(array);
+
+// ARRAY KA TYPE
+// ----------------------------------------------------------
+
+// JavaScript mein array technically ek object hota hai.
+
+console.log(typeof marks);
+
