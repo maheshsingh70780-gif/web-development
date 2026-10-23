@@ -1,0 +1,33 @@
+#heading{
+    color: blue;
+    text-decoration: line-through;
+    background-color : yellow;
+}
+
+
+/* we are adding styles colors and designing to our html elements using css file and
+   linking it to our html file using link tag in head section of html file. 
+*/
+
+
+#heading2{
+    color: red;
+    text-decoration: dotted;
+    background-color: green;
+}
+
+.headings{
+    color: blue;
+    text-decoration: line-through;
+    background-color: fuchsia;
+}
+
+
+body{
+    background-color: pink;
+}
+
+button{
+    background-color: red;
+    color: black;
+}
