@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .dark{
 background-color: black;
 color: azure;
@@ -7,3 +8,14 @@ color: azure;
     background-color:white ;
     color: black;
 }
+=======
+.dark{
+background-color: black;
+color: azure;
+}
+
+.light{
+    background-color:white ;
+    color: black;
+}
+>>>>>>> 052eff5a913f08d41e3fa54fe9dc2c8862c6b01c
