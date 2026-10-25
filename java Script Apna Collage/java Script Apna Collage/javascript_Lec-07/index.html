@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Mobile screen ke according page set karne ke liye -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page ka title -->
+    <title>Document</title>
+
+    <!-- CSS file ko HTML se connect karne ke liye -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    
+<button id="btn1">btn1</button> 
+
+
+    <!-- Ye button hai, is par click karne par message aur alert aayega -->
+    <button onclick="console.log('button clicked'); alert('Mahesh')">
+        click me!
+    </button>
+
+
+
+    <!-- Is button par 2 baar click karne par message aur alert aayega -->
+    <button ondblclick="console.log('button was clicked 2x')">
+        click on 2 time!
+    </button>
+
+
+
+    <!-- Mouse ko is box ke upar le jaane par console mein message aayega -->
+     <div onmouseover="console.log('you are inside div')">
+    this is a box
+</div>
+    <!-- JavaScript mein events ke baare mein practice karne ke liye -->
+    <!-- JavaScript file ko HTML se connect karne ke liye -->
+    <script src="script.js"></script>
+
+</body>
+</html>
