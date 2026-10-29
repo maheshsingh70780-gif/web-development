@@ -1,3 +1,98 @@
-body{
-    background-color: aqua;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #ffffff;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.choice {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.choice:hover {
+    background-color: #081b31;
+}
+
+.choice img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#user-score,
+#comp-score {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.msg-container {
+    margin-top: 2rem;
+}
+
+#msg {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: #081b31;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 380px) {
+    .choices {
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .choice {
+        width: 85px;
+        height: 85px;
+    }
+
+    .choice img {
+        width: 80px;
+        height: 80px;
+    }
 }
