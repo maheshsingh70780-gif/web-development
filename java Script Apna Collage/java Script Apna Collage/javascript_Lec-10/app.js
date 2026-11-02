@@ -29,3 +29,55 @@ student.printMarks();
 // 5. this – Current object ko refer karta hai.
 // 6. this.marks – Current object ki marks property access karta hai.
 // Yaad rakhna: Object ke andar variables ko Properties aur functions ko Methods kehte hain.
+    const employee = {
+    calcTax() {
+        console.log("tex rate is 10%");
+
+    },
+
+};
+
+const karanArjun = {
+    salary: 50000,  
+     calcTax() {
+        console.log("tex rate is 10%");
+     },  
+};
+
+const karanArjun1 = {
+    salary: 50000,  
+     calcTax() {
+        console.log("tex rate is 20%");
+     },    
+};
+
+
+const karanArjun2 = {
+    salary: 50000,
+     calcTax() {
+        console.log("tex rate is 30%");
+     },      
+};
+
+const karanArjun3 = {
+    salary: 50000, 
+     calcTax() {
+        console.log("tex rate is 40%");
+     },     
+};
+
+const karanArjun4 = {
+    salary: 50000, 
+     calcTax() {
+        console.log("tex rate is 50%");
+     },     
+};
+
+karanArjun.__proto__ = employee; 
+karanArjun1.__proto__ = employee; 
+karanArjun2.__proto__ = employee; 
+karanArjun3.__proto__ = employee; 
+karanArjun4.__proto__ = employee; 
+
+// *object& prototype have same method, 
+//  object's method will be used.
